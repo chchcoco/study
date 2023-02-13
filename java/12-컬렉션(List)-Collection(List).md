@@ -88,7 +88,34 @@ ArrayList 사용(4) - 정렬
         - 람다식 : ( (인자 [, 인자, ...]) -> 실행문 )
         - 즉석으로 함수를 작성하는 문법으로 인자를 주면 인자를 갖고 실행하는 메소드를 즉석으로 작성하여 사용.
 
-        
+---
+LinkedList
+===
+
+- ArraryList가 배열을 사용하므로 발생하는 성능적인 단점을 보완
+- 내부는 이중 연결리스트로 구현
+```
+List<String> linkedList = new LinkedList<>();
+```
+- ArrayList와 같이 .add(), .get(), .remove() 등은 List 인터페이스를 상속하므로 동일하게 사용 (내부 로직은 다름)
+
+---
+Stack
+===
+- 리스트 계열의 클래스 Vector클래스를 상속받아 구현
+- 후입선출(LIFO; Last In First Out) 방식의 자료구조
+
+```
+Stack<Integer> intStack = new Stack<>();
+
+intStack.push(1);
+intStack.push(2);
+intStack.push(3);
+
+System.out.println(intStack);
+```
+> 결과 :  [1, 2, 3]
+- Stack에 값을 넣을 때는 push()를 이용
 
 
 ---
